@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cetaphil - Moisturisers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .navbar {
+            background-color: rgb(22, 90, 157);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-left img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .navbar-left span {
+            color: white;
+            font-size: 1.5em;
+        }
+        .navbar-right {
+            display: flex;
+        }
+        .navbar-right a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar-right a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: #1b6cbd;
+            font-size: 2.5em;
+        }
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 30%;
+            margin: 15px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .product-box:hover {
+            transform: scale(1.05);
+        }
+        .product-box img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        .product-box h3 {
+            font-size: 1.2em;
+            margin: 15px 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="\images\logo2.png" alt="Cetaphil Logo"> <!-- Replace 'logo2.png' with your actual logo image -->
+            <span>Cetaphil</span>
+        </div>
+        <div class="navbar-right">
+            <a href="homepage.html">Home</a>
+            <a href="moisturiser.html">Moisturiser</a>
+            <a href="sunscreen.html">Sunscreen</a>
+            <a href="baby_skincare.html">Baby Skincare</a>
+            <a href="serum.html">Serum</a>
+            <a href="homepage.html">Recommendation</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Moisturiser Section -->
+    <h1>Our Moisturisers</h1>
+    <div class="products-container">
+        <!-- Product 1 -->
+        <div class="product-box">
+            <img src="\images\1stimage.jpg" alt="Cetaphil Moisturiser 1"> <!-- Replace with actual image URL -->
+            <h3>Cetaphil Daily Hydrating Lotion</h3>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-box">
+            <img src="\images\moisturiser2.webp" alt="Cetaphil Moisturiser 2"> <!-- Replace with actual image URL -->
+            <h3>Cetaphil Moisturizing Cream</h3>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-box">
+            <img src="\images\moisturiser3.jpg" alt="Cetaphil Moisturiser 3"> <!-- Replace with actual image URL -->
+            <h3>Cetaphil Rich Hydrating Night Cream</h3>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-box">
+            <img src="\images\moisturiser4.webp" alt="Cetaphil Moisturiser 4"> <!-- Replace with actual image URL -->
+            <h3>Cetaphil Daily Oil-Free Hydrating Lotion</h3>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-box">
+            <img src="\images\moisturiser5.jpg" alt="Cetaphil Moisturiser 5"> <!-- Replace with actual image URL -->
+            <h3>Cetaphil Soothing Gel Cream with Aloe</h3>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-box">
+            <img src="\images\moisturiser6.webp" alt="Cetaphil Moisturiser 6"> <!-- Replace with actual image URL -->
+            <h3>cetaphil daily advance ultra hydrating lotion</h3>
+        </div>
+    </div>
+    <script>
+function redirectToCart() {
+    // You can pass product details in the URL if needed
+    const productName = "Cetaphil Daily Hydrating Lotion";
+    const productPrice = 15; // Change this as needed
+
+    // Redirect to the add-to-cart page with product details
+    window.location.href = `/add-to-cart?product=${encodeURIComponent(productName)}&price=${productPrice}`;
+}
+</script>
+
+    </script>
+    
+</body>
+</html>

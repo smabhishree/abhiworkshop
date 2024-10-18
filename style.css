@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: rgb(22, 90, 157);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+.navbar-left img {
+    height: 40px;
+    margin-right: 10px;
+}
+.navbar-left span {
+    color: white;
+    font-size: 1.5em;
+}
+.navbar-right {
+    display: flex;
+}
+.navbar-right a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar-right a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.banner {
+    background-image: url('banner_image.avif'); /* Replace 'banner_image.avif' with your actual image URL */
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 20px;
+    width: 100%;
+}
+.banner h1 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Content Section */
+.content {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 20px 0;
+}
+.dermatologist-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.dermatologist-text {
+    width: 45%; /* Adjust width */
+}
+.dermatologist-text h2 {
+    font-size: 2.5em;
+    color: #1b6cbd;
+}
+.dermatologist-text p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+.dermatologist-video {
+    width: 45%; /* Adjust width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dermatologist-video video {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Contact Us Section */
+.contact-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+.contact-section h2 {
+    color: #1b6cbd;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.contact-section input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.contact-section input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* Footer Section Styling */
+.footer-section {
+    background-color: rgb(22, 90, 157);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer Bottom Section Styling */
+.footer-bottom {
+    background-color:#333;
+    color: #ccc;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom p:hover {
+    color: #fff;
+    text-decoration: underline;
+}

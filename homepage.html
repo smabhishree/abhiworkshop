@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cetaphil - Dermatologist Recommended</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="\images\logo2.png" alt="Cetaphil Logo"> <!-- Replace 'logo2.png' with your actual logo image -->
+            <span>Cetaphil</span>
+        </div>
+        <div class="navbar-right">
+            <a href="#">Home</a>
+            <a href="moisturiser.html">Moisturiser</a>
+            <a href="sunscreen.html">Sunscreen</a>
+            <a href="baby_skincare.html">Baby Skincare</a>
+            <a href="serum.html">Serum</a>
+            <a href="#secondpage">Recommendation</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div class="banner">
+        <!-- Banner content can be added here -->
+    </div>
+
+    <!-- Dermatologist Recommendation Section -->
+    <div id="secondpage">
+        <div class="content">
+            <div class="dermatologist-section">
+                <!-- Left: Information -->
+                <div class="dermatologist-text">
+                    <h2>Dermatologist Recommended</h2>
+                    <p>At Cetaphil, our products have been trusted and recommended by dermatologists around the globe for over 70 years. Our gentle formulas are designed to cleanse, hydrate, and protect even the most sensitive skin.</p>
+                    <p>Cetaphil is recognized for its commitment to skin health, making it a go-to choice for individuals with dry, irritated, or sensitive skin. Our range includes cleansers, moisturizers, and sunscreens that provide a comprehensive skincare routine.</p>
+                    <p>Whether you are treating common skin concerns like acne or eczema, or simply looking for a reliable, non-irritating daily skincare solution, Cetaphil has a product to meet your needs.</p>
+                    <p>We believe that healthy skin starts with the right care, and we are proud to support dermatologists in helping their patients maintain healthy, radiant skin.</p>
+                </div>
+
+                <!-- Right: Video Display -->
+                <div class="dermatologist-video">
+                    <video controls>
+                        <source src="\images\cetaphil_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact" class="contact-section">
+        <h2>Ask us anything!</h2>
+        <form id="contactForm" action="http://localhost:4000/submit" method="post">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="submit" value="Submit">
+        </form>
+        <p id="formResponse"></p>
+    </div>
+
+    <!-- Footer Section 2: Social Media Links -->
+    <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon fb">
+                <img src="\images\facebook.jpeg" alt="Facebook" title="Follow us on Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon tw">
+                <img src="\images\twitter.jpg" alt="Twitter" title="Follow us on Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon ig">
+                <img src="\images\instagram.jpg" alt="Instagram" title="Follow us on Instagram">
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="social-icon yt">
+                <img src="\images\youtube.jpeg" alt="YouTube" title="Subscribe to our YouTube channel">
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Cetaphil. All Rights Reserved | Designed by Abhishree</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
